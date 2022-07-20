@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "810663061211",
+    "project_id": "stepforwater-5ae66",
+    "storage_bucket": "stepforwater-5ae66.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:810663061211:android:b27f5d50e6f23204d9cefe",
+        "android_client_info": {
+          "package_name": "com.sehan.stepforwater"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "810663061211-0i6edu9vasrngpj6o80pec72jvn6otfs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB1z1lVwNeUKRTs5PeuXbHnIRKHi08OrKI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "810663061211-0i6edu9vasrngpj6o80pec72jvn6otfs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
