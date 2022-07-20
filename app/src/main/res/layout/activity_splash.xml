@@ -6,10 +6,6 @@
         <variable
             name="activity"
             type="com.sehan.stepforwater.ui.view.activity.SplashActivity" />
-
-        <variable
-            name="image"
-            type="String" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -27,8 +23,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            image="@{image}"/>
+            app:layout_constraintTop_toTopOf="parent"/>
 
         <ImageView
             android:id="@+id/ivSplash02"

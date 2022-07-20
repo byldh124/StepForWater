@@ -2,6 +2,7 @@ package com.sehan.stepforwater.di
 
 import com.google.gson.GsonBuilder
 import com.jakewharton.retrofit2.adapter.kotlin.coroutines.CoroutineCallAdapterFactory
+import com.sehan.stepforwater.network.ApiInterface
 import com.sehan.stepforwater.network.Repository
 import com.sehan.stepforwater.network.RepositoryImpl
 import com.sehan.stepforwater.network.URLManager.baseUrl
@@ -19,9 +20,8 @@ import java.util.concurrent.TimeUnit
 
 val appModules = module {
     single {
-
+        createWebService<ApiInterface>(okHttpClient = createHttpClient(), baseUrl = baseUrl)
     }
-
     factory<Repository> { RepositoryImpl(api = get()) }
 }
 

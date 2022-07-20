@@ -1,6 +1,8 @@
 package com.sehan.stepforwater.ui.viewmodel
 
 import androidx.lifecycle.ViewModel
+import com.sehan.stepforwater.utils.SWLog
+import com.sehan.stepforwater.utils.firebase.SWCrash
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.Job
@@ -17,5 +19,10 @@ abstract class BaseViewModel : ViewModel(), CoroutineScope{
         super.onCleared()
         // 메모리 누수를 막기 위해 연결된 액티비티가 destroyed 될 때 job을 제거한다.
         job.cancel()
+    }
+
+    fun logException(msg: String){
+        SWCrash.getInstance().log(msg)
+        SWLog.e(msg)
     }
 }
