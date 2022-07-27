@@ -6,12 +6,12 @@ class SWLog {
     companion object {
         private const val TAG = "Custom Debug"
 
-        fun d(msg: String) {
-            Log.d(TAG, msg)
+        fun d(any: Any, msg: String) {
+            Log.d(TAG, "[${any.javaClass.simpleName.trim()}] , $msg")
         }
 
-        fun e(msg: String) {
-            Log.e(TAG, msg)
+        fun e(any: Any, msg: String) {
+            Log.e(TAG, "[${any.javaClass.simpleName.trim()}] , $msg")
         }
 
         fun i(msg: String) {
@@ -21,5 +21,14 @@ class SWLog {
         fun v(msg: String) {
             Log.v(TAG, msg)
         }
+
+        fun d(msg: String) {
+            Log.d(TAG, msg)
+        }
+
+        fun e(msg: String) {
+            Log.e(TAG, msg)
+        }
+
     }
 }

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="activity"
+            type="com.sehan.stepforwater.ui.view.activity.SignUpActivity" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.view.activity.SignUpActivity">
+
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:background="@color/blue_light01"
+            android:theme="@style/ToolbarTheme_white"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/nanum_square_round_eb"
+                android:text="회원가입"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+        </com.google.android.material.appbar.MaterialToolbar>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="16dp"
+            app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+            <EditText
+                android:id="@+id/etId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_edit_text"
+                android:fontFamily="@font/nanum_square_b"
+                android:hint="아이디"
+                android:inputType="text"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="16dp"
+                android:textColor="@color/gray_dark01"
+                android:textSize="14dp"
+                android:importantForAutofill="no" />
+
+            <EditText
+                android:id="@+id/etPw"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/bg_edit_text"
+                android:fontFamily="@font/nanum_square_round_b"
+                android:hint="비밀번호"
+                android:inputType="textPassword"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="16dp"
+                android:textColor="@color/gray_dark01"
+                android:textColorHint="@color/gray_light01"
+                android:textSize="14dp"
+                android:importantForAutofill="no" />
+
+            <EditText
+                android:id="@+id/etPw2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/bg_edit_text"
+                android:fontFamily="@font/nanum_square_round_b"
+                android:hint="비밀번호 확인"
+                android:inputType="textPassword"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="16dp"
+                android:textColor="@color/gray_dark01"
+                android:textSize="14dp"
+                android:importantForAutofill="no" />
+
+            <EditText
+                android:id="@+id/etName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/bg_edit_text"
+                android:fontFamily="@font/nanum_square_round_b"
+                android:hint="이름 (닉네임)"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="16dp"
+                android:textColor="@color/gray_dark01"
+                android:textSize="14dp"
+                android:importantForAutofill="no" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="48dp"
+                android:background="@drawable/bg_button_blue_01"
+                android:fontFamily="@font/nanum_square_round_eb"
+                android:gravity="center"
+                android:onClick="@{() -> activity.requestSignUp()}"
+                android:paddingVertical="16dp"
+                android:text="회원가입 하기"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="16dp" />
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

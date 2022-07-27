@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <variable
+            name="activity"
+            type="com.sehan.stepforwater.ui.view.activity.SignInActivity" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.view.activity.SignInActivity">
+
+        <LinearLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@color/blue_light01"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintDimensionRatio="3:1"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nanum_square_round_eb"
+                android:text="STEP FOR WATER"
+                android:textColor="@color/white"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nanum_square_round_eb"
+                android:text="희망걷기대회"
+                android:textColor="@color/white"
+                android:textSize="28dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:padding="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/header">
+
+            <LinearLayout
+                android:id="@+id/txtWrapper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/etId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/nanum_square_round_b"
+                    android:hint="아이디"
+                    android:background="@drawable/bg_edit_text"
+                    android:paddingHorizontal="12dp"
+                    android:inputType="text"
+                    android:paddingVertical="16dp"
+                    android:textColor="@color/gray_dark01"
+                    android:textColorHint="@color/gray_light01"
+                    android:textSize="14dp" />
+
+                <EditText
+                    android:id="@+id/etPw"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/nanum_square_round_b"
+                    android:background="@drawable/bg_edit_text"
+                    android:paddingHorizontal="12dp"
+                    android:paddingVertical="16dp"
+                    android:inputType="textPassword"
+                    android:hint="비밀번호"
+                    android:textColor="@color/gray_dark01"
+                    android:textColorHint="@color/gray_light01"
+                    android:textSize="14dp" />
+            </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/checkBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="로그인 상태 유지"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_button_blue_01"
+                    android:fontFamily="@font/nanum_square_round_eb"
+                    android:gravity="center"
+                    android:paddingVertical="16dp"
+                    android:textSize="16dp"
+                    android:text="로그인"
+                    android:onClick="@{activity::checkField}"
+                    android:textAlignment="center"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/bg_button_gray_01"
+                    android:fontFamily="@font/nanum_square_round_eb"
+                    android:gravity="center"
+                    android:paddingVertical="16dp"
+                    android:textSize="16dp"
+                    android:text="회원가입"
+                    android:onClick="@{activity::goToSignUpActivity}"
+                    android:textAlignment="center"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="이 어플은 희망걷기대회 전용 앱입니다."
+                    android:layout_marginTop="24dp"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="14dp"
+                    android:fontFamily="@font/nanum_square_b"
+                    android:textColor="@color/gray_dark01"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

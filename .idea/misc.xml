@@ -3,7 +3,16 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/05.Private/Projects/StepForWater/app/src/main/res/drawable/bg_button_blue_01.xml" value="0.16" />
+        <entry key="..\:/05.Private/Projects/StepForWater/app/src/main/res/drawable/bg_button_gray_01.xml" value="0.193" />
+        <entry key="..\:/05.Private/Projects/StepForWater/app/src/main/res/drawable/bg_dialog_default_white.xml" value="0.16" />
+        <entry key="..\:/05.Private/Projects/StepForWater/app/src/main/res/drawable/bg_loading.xml" value="0.253" />
+        <entry key="..\:/05.Private/Projects/StepForWater/app/src/main/res/layout/activity_main.xml" value="0.15677083333333333" />
+        <entry key="..\:/05.Private/Projects/StepForWater/app/src/main/res/layout/activity_sign_in.xml" value="0.33" />
+        <entry key="..\:/05.Private/Projects/StepForWater/app/src/main/res/layout/activity_sign_up.xml" value="0.3619791666666667" />
         <entry key="..\:/05.Private/Projects/StepForWater/app/src/main/res/layout/activity_splash.xml" value="0.24947916666666667" />
+        <entry key="..\:/05.Private/Projects/StepForWater/app/src/main/res/layout/dialog_error.xml" value="0.33" />
+        <entry key="..\:/05.Private/Projects/StepForWater/app/src/main/res/layout/dialog_loading.xml" value="0.3609375" />
       </map>
     </option>
   </component>

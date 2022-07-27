@@ -12,13 +12,6 @@ data class BaseResponse(
     val code:Int
 )
 
-data class MsgResponse(
-    @SerializedName("message")
-    val msg:String,
-    @SerializedName("code")
-    val code:Int
-)
-
 data class BoolResponse(
     @SerializedName("result")
     val body: Boolean,

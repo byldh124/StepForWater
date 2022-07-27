@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
+    <!-- Splash Activity 전용 -->
     <style name="AppTheme.Splash" parent="Theme.MaterialComponents.Light.NoActionBar">
         <item name="android:statusBarColor">@color/white</item>
         <item name="android:windowLightStatusBar">true</item>
@@ -7,9 +9,23 @@
         <item name="android:windowBackground">@color/background_01</item>
     </style>
 
-    <style name="AppTheme.NoActionBar" parent="Theme.MaterialComponents.Light.NoActionBar">
+    <!--Splash Activity 제외 다른 Activity -->
+    <style name="AppTheme.NoActionBar.Theme.White" parent="Theme.MaterialComponents.Light.NoActionBar">
         <item name="android:statusBarColor">@color/white</item>
         <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+    <!--Splash Activity 제외 다른 Activity -->
+    <style name="AppTheme.NoActionBar.Theme.Blue" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="android:statusBarColor">@color/blue_light01</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+    <!-- 다이얼로그 -->
+    <style name="DialogTheme">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
     </style>
 
 </resources>

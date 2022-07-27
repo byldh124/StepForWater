@@ -1,17 +1,17 @@
 package com.sehan.stepforwater.ui.viewmodel
 
-import android.os.Build
-import androidx.lifecycle.MutableLiveData
 import com.sehan.stepforwater.BuildConfig
 import com.sehan.stepforwater.network.Repository
+import com.sehan.stepforwater.network.SingleLiveEvent
 import com.sehan.stepforwater.network.UseCaseResult
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
+import org.json.JSONObject
 
 class SplashViewModel(private val repository: Repository) : BaseViewModel() {
 
-    val appValid = MutableLiveData<Int>()
+    val appValid = SingleLiveEvent<Int>()
 
     fun checkAppVersion() {
         launch {

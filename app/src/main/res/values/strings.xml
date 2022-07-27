@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">StepForWater</string>
+    <string name="cmn_confirm">확인</string>
 </resources>
